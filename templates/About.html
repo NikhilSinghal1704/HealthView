@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dron HealthView</title>
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  </head>
+  <body>
+
+    <header class="text-gray-600 body-font bg-indigo-100">
+      <div class="container mx-auto flex flex-wrap items-center
+        justify-between
+        py-4 md:py-5 px-4 md:px-5">
+        <a href="index.html" class="flex items-center text-gray-900">
+          <img src="logo.png" alt="Logo" class="w-16 md:w-40 mr-4
+            md:mr-6">
+        </a>
+        <nav class="md:hidden">
+          <button class="flex items-center px-3 py-2 rounded
+            hover:text-gray-900
+            focus:outline-none">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M3.75
+                7.5H20.25V9.75H3.75V7.5ZM3.75
+                11.25H20.25V13.5H3.75V11.25ZM3.75
+                15H20.25V17.25H3.75V15Z"></path>
+            </svg>
+          </button>
+          <div class="hidden absolute top-16 left-0 right-0 z-10
+            bg-indigo-100">
+            <a href="Dashboard.html" class="block px-4 py-2 text-gray-900
+              hover:bg-gray-200
+              font-bold">Dashboard</a>
+            <a href="Firstaid.html" class="block px-4 py-2 text-gray-900
+              hover:bg-gray-200
+              font-bold">First Aid Tips</a>
+            <a href="#" class="block px-4 py-2 text-gray-900
+              hover:bg-gray-200
+              font-bold">Medical Providers</a>
+            <a href="About.html" class="block px-4 py-2 text-gray-900
+              hover:bg-gray-200
+              font-bold">About</a>
+          </div>
+        </nav>
+        <nav class="hidden md:flex md:ml-auto md:mr-4">
+          <a href="Dashboard.html" class="mr-5 hover:text-gray-900 font-bold">Dashboard</a>
+          <a href="Firstaid.html" class="mr-5 hover:text-gray-900 font-bold">First
+            Aid Tips</a>
+          <a href="#" class="mr-5 hover:text-gray-900 font-bold">Medical
+            Providers</a>
+          <a href="About.html" class="mr-5 hover:text-gray-900 font-bold">About</a>
+        </nav>
+        <button class="inline-flex items-center bg-gray-900 border-0
+          py-1 px-3
+          focus:outline-none hover:bg-gray-700 rounded text-white
+          text-base
+          md:mt-0">
+          Sign Up
+        </button>
+      </div>
+    </header>
+
+    <div class="relative bg-gray-900">
+      <img class="w-full h-auto object-cover" src="banner.jpg" alt="Banner
+        Image">
+      <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+      <div class="container absolute inset-0 mx-auto flex flex-col items-center
+        justify-center px-4 sm:px-6 lg:px-8">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white
+          text-center">Welcome to HealthView</h1>
+        <p class="mt-3 text-xl sm:text-2xl lg:text-3xl text-gray-300
+          text-center">Your Comprehensive Online Health Management System</p>
+      </div>
+    </div>
+
+    <section class="bg-indigo-100 py-16">
+      <div class="container mx-auto px-4 md:px-8 lg:px-16">
+        <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 text-center
+          mb-6">Empower Yourself with HealthView</h2>
+        <div class="flex flex-wrap items-center justify-between">
+          <div class="w-full md:w-1/2 lg:w-5/12 mb-8">
+            <p class="text-lg lg:text-xl text-gray-700 mb-8">At HealthView, our
+              mission is to empower individuals to take control of their own
+              health by providing them with the tools and resources they need to
+              manage their health effectively. We understand that navigating the
+              healthcare system can be overwhelming, which is why we have
+              created a comprehensive online platform that puts you in control
+              of your health.</p>
+            <p class="text-lg lg:text-xl text-gray-700 mb-8">Our platform is
+              designed to provide you with access to a range of healthcare
+              services and tools, all in one convenient location. With
+              HealthView, you can access your medical records, schedule
+              appointments, connect with healthcare professionals, track your
+              physical activity, monitor your diet, and much more.</p>
+            <p class="text-lg lg:text-xl text-gray-700 mb-8">We believe that by
+              providing individuals with the tools they need to manage their
+              health proactively, we can help reduce the prevalence of chronic
+              illnesses and improve overall health outcomes. Our platform is
+              user-friendly and accessible to people of all ages, from teenagers
+              to the elderly.</p>
+            <p class="text-lg lg:text-xl text-gray-700 mb-8">At HealthView, we
+              take the security and privacy of your data seriously. We have
+              implemented industry-standard encryption and security measures to
+              keep your data safe and secure.</p>
+            <p class="text-lg lg:text-xl text-gray-700">Whether you are a health
+              enthusiast, someone with pre-existing medical conditions, or
+              simply looking to live a healthier lifestyle, HealthView is the
+              perfect platform for you. Join us today and take control of your
+              own health!</p>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-7/12">
+            <img src="interface.png" alt="Healthy Lifestyle" class="rounded-lg
+              shadow-md">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1 class="text-2xl font-medium title-font mb-4 text-gray-900">OUR
+            TEAM</h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">HealthView is
+            composed of a group of passionate individuals with diverse
+            backgrounds and skillsets, all dedicated to empowering individuals
+            to take control of their own health. Our team is made up of software
+            developers and designers.
+          </p>
+        </div>
+
+        <div style="display: flex; justify-content: center;">
+          <div class="p-4 lg:w-1/4 md:w-1/2">
+            <div class="h-full flex flex-col items-center text-center">
+              <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56
+                object-cover object-center mb-4" src="nikhil.jpeg">
+              <div class="w-full">
+                <h2 class="title-font font-medium text-lg text-gray-900">Nikhil
+                  Singhal</h2>
+                <h3 class="text-gray-500 mb-3">Frontend Developer</h3>
+                <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen
+                  squid fanny pack vaporware.</p>
+                <span class="inline-flex">
+                  <a href="http://www.linkedin.com/in/nikhilsinghal1704"
+                    class="ml-3 text-gray-500">
+                    <svg fill="currentColor" stroke="currentColor"
+                      stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                      <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0
+                        00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                      <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                  </a>
+                  <div class="ml-3 w-5 h-5">
+                    <a href="mailto:nikhilsinghal1704@google.com">
+                      <img src="gmail.png" class="w-full h-full object-cover
+                        object-center">
+                    </a>
+                  </div>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 lg:w-1/4 md:w-1/2">
+            <div class="h-full flex flex-col items-center text-center">
+              <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56
+                object-cover object-center mb-4"
+                src="Yogita.jpg">
+              <div class="w-full">
+                <h2 class="title-font font-medium text-lg text-gray-900">Yogita
+                  Kanyal</h2>
+                <h3 class="text-gray-500 mb-3">Backend Developer</h3>
+                <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen
+                  squid fanny pack vaporware.</p>
+                <span class="inline-flex">
+                  <a href="http://www.linkedin.com/in/nikhilsinghal1704"
+                    class="ml-3 text-gray-500">
+                    <svg fill="currentColor" stroke="currentColor"
+                      stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                      <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0
+                        00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                      <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                  </a>
+                  <div class="ml-3 w-5 h-5">
+                    <a href="mailto:nikhilsinghal1704@google.com">
+                      <img src="gmail.png" class="w-full h-full object-cover
+                        object-center">
+                    </a>
+                  </div>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 lg:w-1/4 md:w-1/2">
+            <div class="h-full flex flex-col items-center text-center">
+              <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56
+                object-cover object-center mb-4"
+                src="Gautam.png">
+              <div class="w-full">
+                <h2 class="title-font font-medium text-lg text-gray-900">Gautam</h2>
+                <h3 class="text-gray-500 mb-3">Backend Developer</h3>
+                <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen
+                  squid fanny pack vaporware.</p>
+                <span class="inline-flex">
+                  <a href="http://www.linkedin.com/in/nikhilsinghal1704"
+                    class="ml-3 text-gray-500">
+                    <svg fill="currentColor" stroke="currentColor"
+                      stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                      <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0
+                        00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                      <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                  </a>
+                  <div class="ml-3 w-5 h-5">
+                    <a href="mailto:nikhilsinghal1704@google.com">
+                      <img src="gmail.png" class="w-full h-full object-cover
+                        object-center">
+                    </a>
+                  </div>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 lg:w-1/4 md:w-1/2">
+            <div class="h-full flex flex-col items-center text-center">
+              <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56
+                object-cover object-center mb-4"
+                src="Rajat.jpg">
+              <div class="w-full">
+                <h2 class="title-font font-medium text-lg text-gray-900">Rajat</h2>
+                <h3 class="text-gray-500 mb-3">Database Developer</h3>
+                <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen
+                  squid fanny pack vaporware.</p>
+                <span class="inline-flex">
+                  <a href="http://www.linkedin.com/in/nikhilsinghal1704"
+                    class="ml-3 text-gray-500">
+                    <svg fill="currentColor" stroke="currentColor"
+                      stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                      <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0
+                        00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                      <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                  </a>
+                  <div class="ml-3 w-5 h-5">
+                    <a href="mailto:nikhilsinghal1704@google.com">
+                      <img src="gmail.png" class="w-full h-full object-cover
+                        object-center">
+                    </a>
+                  </div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="text-gray-600 body-font">
+      <div class="bg-gray-100">
+        <div class="container px-5 py-6 mx-auto flex items-center
+          sm:flex-row flex-col">
+          <img src="logo.png" alt="Logo" class="w-16 md:w-40 mr-4
+            md:mr-6">
+          <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2023 TechTitans
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4
+            justify-center sm:justify-start">
+            <div class="ml-3 w-5 h-5">
+              <a href="mailto:dcetechtitans@google.com">
+                <img src="gmail.png" class="w-full h-full object-cover
+                  object-center">
+              </a>
+            </div>
+            <div class="ml-3 w-5 h-5">
+              <a href="">
+                  <img src="github.png" class="w-full h-full object-cover
+                    object-center">
+              </a>
+            </div>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dron HealthView</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    </head>
+    <body>
+
+        <header class="text-gray-600 body-font bg-indigo-100">
+            <div class="container mx-auto flex flex-wrap items-center
+                justify-between
+                py-4 md:py-5 px-4 md:px-5">
+                <a href="index.html" class="flex items-center text-gray-900">
+                    <img src="logo.png" alt="Logo" class="w-16 md:w-40 mr-4
+                        md:mr-6">
+                </a>
+                <nav class="md:hidden">
+                    <button class="flex items-center px-3 py-2 rounded
+                        hover:text-gray-900
+                        focus:outline-none">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M3.75
+                                7.5H20.25V9.75H3.75V7.5ZM3.75
+                                11.25H20.25V13.5H3.75V11.25ZM3.75
+                                15H20.25V17.25H3.75V15Z"></path>
+                        </svg>
+                    </button>
+                    <div class="hidden absolute top-16 left-0 right-0 z-10
+                        bg-indigo-100">
+                        <a href="#" class="block px-4 py-2 text-gray-900
+                            hover:bg-gray-200
+                            font-bold">Dashboard</a>
+                        <a href="Firstaid.html" class="block px-4 py-2 text-gray-900
+                            hover:bg-gray-200
+                            font-bold">First Aid Tips</a>
+                        <a href="#" class="block px-4 py-2 text-gray-900
+                            hover:bg-gray-200
+                            font-bold">Medical Providers</a>
+                        <a href="About.html" class="block px-4 py-2
+                            text-gray-900
+                            hover:bg-gray-200
+                            font-bold">About</a>
+                    </div>
+                </nav>
+                <nav class="hidden md:flex md:ml-auto md:mr-4">
+                    <a href="#" class="mr-5 hover:text-gray-900 font-bold">Dashboard</a>
+                    <a href="#" class="mr-5 hover:text-gray-900 font-bold">First
+                        Aid Tips</a>
+                    <a href="#" class="mr-5 hover:text-gray-900 font-bold">Medical
+                        Providers</a>
+                    <a href="About.html" class="mr-5 hover:text-gray-900
+                        font-bold">About</a>
+                </nav>
+                <button class="inline-flex items-center bg-gray-900 border-0
+                    py-1 px-3
+                    focus:outline-none hover:bg-gray-700 rounded text-white
+                    text-base
+                    md:mt-0">
+                    Sign Up
+                </button>
+            </div>
+        </header>
+
+        <section class="text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10
+                    mb-10 border-gray-200 sm:flex-row flex-col">
+                    <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex
+                        items-center justify-center rounded-full bg-green-100
+                        text-green-500 flex-shrink-0">
+                        <img src = "insurance.png">
+                    </div>
+                    <div class="flex-grow sm:text-left text-center mt-6
+                        sm:mt-0">
+                        <h2 class="text-gray-900 text-lg title-font font-medium
+                            mb-2">Your Dashboard</h2>
+                        <p class="leading-relaxed text-base">This dashboard will keep track of your fitness and will be integrated with the wearables</p>
+                        <a class="mt-3 text-green-500 inline-flex items-center">Learn
+                            More
+                            <svg fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0
+                                0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10
+                    mb-10 border-gray-200 sm:flex-row flex-col">
+                    <div class="flex-grow sm:text-left text-center mt-6
+                        sm:mt-0">
+                        <h2 class="text-gray-900 text-lg title-font font-medium
+                            mb-2">The Medical Providers</h2>
+                        <p class="leading-relaxed text-base">It will list down all the clinics and hospitals near you sorted by thier specialization according to your need.</p>
+                        <a class="mt-3 text-green-500 inline-flex items-center">Learn
+                            More
+                            <svg fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0
+                                0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="sm:w-32 sm:order-none order-first sm:h-32 h-20
+                        w-20 sm:ml-10 inline-flex items-center justify-center
+                        rounded-full bg-green-100 text-green-500 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10"
+                            viewBox="0 0 24 24">
+                            <circle cx="6" cy="6" r="3"></circle>
+                            <circle cx="6" cy="18" r="3"></circle>
+                            <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12
+                                8.12L12 12"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row
+                    flex-col">
+                    <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex
+                        items-center justify-center rounded-full bg-green-100
+                        text-green-500 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10"
+                            viewBox="0 0 24 24">
+                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div class="flex-grow sm:text-left text-center mt-6
+                        sm:mt-0">
+                        <h2 class="text-gray-900 text-lg title-font font-medium
+                            mb-2">First-Aid</h2>
+                        <p class="leading-relaxed text-base">This will provide you with the first-aid information for all your emergencies.</p>
+                        <a class="mt-3 text-green-500 inline-flex items-center">Learn
+                            More
+                            <svg fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0
+                                0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <button class="flex mx-auto mt-20 text-white bg-green-500
+                    border-0 py-2 px-8 focus:outline-none hover:bg-green-600
+                    rounded text-lg">Button</button>
+            </div>
+        </section>
+
+        <footer class="text-gray-600 body-font">
+            <div class="bg-gray-100">
+              <div class="container px-5 py-6 mx-auto flex items-center
+                sm:flex-row flex-col">
+                <img src="logo.png" alt="Logo" class="w-16 md:w-40 mr-4
+                  md:mr-6">
+                <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2023 TechTitans
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-4
+                  justify-center sm:justify-start">
+                  <div class="ml-3 w-5 h-5">
+                    <a href="mailto:dcetechtitans@google.com">
+                      <img src="gmail.png" class="w-full h-full object-cover
+                        object-center">
+                    </a>
+                  </div>
+                  <div class="ml-3 w-5 h-5">
+                    <a href="">
+                        <img src="github.png" class="w-full h-full object-cover
+                          object-center">
+                    </a>
+                  </div>
+                </span>
+              </div>
+            </div>
+        </footer>
+      
+
+    </body>
+</html>

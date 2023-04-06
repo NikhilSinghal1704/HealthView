@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Web Page</title>
+    <link rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css">
+  </head>
+  <body class="bg-gray-100">
+
+    <header class="text-gray-600 body-font bg-indigo-100">
+      <div class="container mx-auto flex flex-wrap items-center justify-between
+        py-4 md:py-5 px-4 md:px-5">
+        <a href="index.html" class="flex items-center text-gray-900">
+          <img src="logo.png" alt="Logo" class="w-16 md:w-40 mr-4 md:mr-6">
+        </a>
+        <nav class="md:hidden">
+          <button class="flex items-center px-3 py-2 rounded hover:text-gray-900
+            focus:outline-none">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M3.75 7.5H20.25V9.75H3.75V7.5ZM3.75
+                11.25H20.25V13.5H3.75V11.25ZM3.75 15H20.25V17.25H3.75V15Z"></path>
+            </svg>
+          </button>
+          <div class="hidden absolute top-16 left-0 right-0 z-10 bg-indigo-100">
+            <a href="#" class="block px-4 py-2 text-gray-900 hover:bg-gray-200
+              font-bold">Dashboard</a>
+            <a href="#" class="block px-4 py-2 text-gray-900 hover:bg-gray-200
+              font-bold">First Aid Tips</a>
+            <a href="#" class="block px-4 py-2 text-gray-900 hover:bg-gray-200
+              font-bold">Medical Providers</a>
+            <a href="#" class="block px-4 py-2 text-gray-900 hover:bg-gray-200
+              font-bold">About</a>
+          </div>
+        </nav>
+        <nav class="hidden md:flex md:ml-auto md:mr-4">
+          <a href="#" class="mr-5 hover:text-gray-900 font-bold">Dashboard</a>
+          <a href="#" class="mr-5 hover:text-gray-900 font-bold">First Aid Tips</a>
+          <a href="#" class="mr-5 hover:text-gray-900 font-bold">Medical
+            Providers</a>
+          <a href="#" class="mr-5 hover:text-gray-900 font-bold">About</a>
+        </nav>
+        <button class="inline-flex items-center bg-gray-900 border-0 py-1 px-3
+          focus:outline-none hover:bg-gray-700 rounded text-white text-base
+          md:mt-0">
+          Sign Up
+        </button>
+      </div>
+    </header>
+
+    <div class="text-center text-3xl font-bold mb-4">
+      My <span class="text-red-500">Bold</span> Statement
+    </div>
+
+    <div class="container mx-auto px-4 py-8 md:py-12">
+      <div class="flex flex-col md:flex-row md:items-center">
+        <div class="md:w-1/2 md:pr-8 mb-6 md:mb-0">
+          <p class="mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+            risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing
+            nec, ultricies sed, dolor.
+          </p>
+          <p class="mb-4">
+            Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut
+            libero venenatis faucibus. Nullam quis ante.
+          </p>
+          <p class="mb-4">
+            Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut
+            libero venenatis faucibus. Nullam quis ante.
+          </p>
+          <p class="mb-4">
+            Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut
+            libero venenatis faucibus. Nullam quis ante.
+          </p>
+        </div>
+        <div class="md:w-1/2">
+          <img src="https://picsum.photos/500/300" alt="placeholder image"
+            class="w-full rounded-lg shadow-lg">
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-gray-600 body-font">
+      <div class="bg-gray-100">
+        <div class="container px-5 py-6 mx-auto flex items-center
+          sm:flex-row flex-col">
+          <img src="logo.png" alt="Logo" class="w-16 md:w-40 mr-4
+            md:mr-6">
+          <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2023 TechTitans
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4
+            justify-center sm:justify-start">
+            <div class="ml-3 w-5 h-5">
+              <a href="mailto:dcetechtitans@google.com">
+                <img src="gmail.png" class="w-full h-full object-cover
+                  object-center">
+              </a>
+            </div>
+            <div class="ml-3 w-5 h-5">
+              <a href="">
+                  <img src="github.png" class="w-full h-full object-cover
+                    object-center">
+              </a>
+            </div>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+
+  </body>
+</html>
