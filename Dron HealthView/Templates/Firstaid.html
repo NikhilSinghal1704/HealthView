@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dron HealthView</title>
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  </head>
+  <body>
+
+    <header class="text-gray-600 body-font bg-indigo-100">
+      <div class="container mx-auto flex flex-wrap items-center justify-between
+        py-4 md:py-5 px-4 md:px-5">
+        <a href="index" class="flex items-center text-gray-900">
+          <img src="{{url_for('static', filename='logo.png')}}" alt="Logo"
+            class="w-16 md:w-40 mr-4 md:mr-6">
+        </a>
+        <nav class="md:hidden">
+          <button class="flex items-center px-3 py-2 rounded hover:text-gray-900
+            focus:outline-none">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M3.75 7.5H20.25V9.75H3.75V7.5ZM3.75
+                11.25H20.25V13.5H3.75V11.25ZM3.75 15H20.25V17.25H3.75V15Z"></path>
+            </svg>
+          </button>
+          <div class="hidden absolute top-16 left-0 right-0 z-10 bg-indigo-100">
+            <a href="Dashboard" class="block px-4 py-2 text-gray-900 hover:bg-gray-200
+              font-bold">Dashboard</a>
+            <a href="Firstaid" class="block px-4 py-2 text-gray-900
+              hover:bg-gray-200
+              font-bold">First Aid Tips</a>
+            <a href="#" class="block px-4 py-2 text-gray-900 hover:bg-gray-200
+              font-bold">Medical Providers</a>
+            <a href="About" class="block px-4 py-2 text-gray-900 hover:bg-gray-200
+              font-bold">About</a>
+          </div>
+        </nav>
+        <nav class="hidden md:flex md:ml-auto md:mr-4">
+          <a href="Dashboard" class="mr-5 hover:text-gray-900 font-bold">Dashboard</a>
+          <a href="Firstaid" class="mr-5 hover:text-gray-900 font-bold">First
+            Aid Tips</a>
+          <a href="#" class="mr-5 hover:text-gray-900 font-bold">Medical
+            Providers</a>
+          <a href="About" class="mr-5 hover:text-gray-900 font-bold">About</a>
+        </nav>
+        <button class="inline-flex items-center bg-gray-900 border-0 py-1 px-3
+          focus:outline-none hover:bg-gray-700 rounded text-white text-base
+          md:mt-0">
+          Sign Up
+        </button>
+      </div>
+    </header>
+
+
+    <section class="py-10 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center">
+          <h2 class="text-base text-indigo-600 font-semibold tracking-wide
+            uppercase">First Aid Tips</h2>
+          <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight
+            text-gray-900 sm:text-4xl">
+            Be prepared for any emergency
+          </p>
+          <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+            Knowing the right first aid techniques can help save a life in an
+            emergency situation. Here are some important first aid tips to keep
+            in mind.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4">
+
+          <div class="p-4 md:w-1/3">
+            <a href="{{ url_for('aid_details', word='CPR') }}" class="block
+              h-full border-2 border-gray-200
+              border-opacity-60 rounded-lg overflow-hidden
+              hover:border-indigo-500 hover:shadow-md transition duration-300">
+              <img class="lg:h-55 md:h-43 w-full object-cover object-center"
+                src="https://www.javatpoint.com/fullformpages/images/cpr.png"
+                alt="blog">
+              <div class="p-6">
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">CPR(cardiopulmonary
+                  resuscitation)</h1>
+                <p class="leading-relaxed mb-3">CPR stands for cardiopulmonary
+                  resuscitation, which is an emergency procedure used to
+                  revive a person who has stopped breathing and has no
+                  heartbeat. CPR involves chest compressions and rescue breaths
+                  to manually pump oxygenated blood through the body in an
+                  attempt to keep vital organs, such as the
+                  brain and heart, functioning until advanced medical help
+                  arrives. CPR can be a lifesaving procedure in situations
+                  such as cardiac arrest, drowning, or choking, and is
+                  recommended by many medical organizations and first aid
+                  courses.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-4 md:w-1/3">
+            <a href="#" class="block h-full border-2 border-gray-200
+              border-opacity-60 rounded-lg overflow-hidden
+              hover:border-indigo-500 hover:shadow-md transition duration-300">
+              <img class="lg:h-55 md:h-43 w-full object-cover object-center"
+                src="{{url_for('static', filename='chocking.jpg')}}" alt="blog">
+              <div class="p-6">
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Heimlich
+                  maneuver</h1>
+                <p class="leading-relaxed mb-3">The Heimlich maneuver, also
+                  known as abdominal thrusts, is a first aid procedure
+                  used to save someone from choking when they have an object,
+                  such as food or a foreign object, lodged in their
+                  throat. The maneuver involves standing behind the choking
+                  person, placing your arms around their waist, and
+                  making a fist with one hand while placing it between the navel
+                  and the ribcage. You then grasp your fist with
+                  your other hand and forcefully thrust upward into the abdomen
+                  several times until the object is expelled from the airway.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-4 md:w-1/3">
+            <a href="#" class="block h-full border-2 border-gray-200
+              border-opacity-60 rounded-lg overflow-hidden
+              hover:border-indigo-500 hover:shadow-md transition duration-300">
+              <img class="lg:h-55 md:h-43 w-full object-cover object-center"
+                src="{{url_for('static', filename='burn.jpg')}}" alt="blog">
+              <div class="p-6">
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">'Burns</h1>
+                <p class="leading-relaxed mb-3">A burn is a type of injury that
+                  occurs when the skin or other tissues are exposed to
+                  extreme heat, electricity, chemicals, or radiation. Burns can
+                  range in
+                  severity from minor to life-threatening, depending on the
+                  extent of the damage to the skin and underlying tissues.
+                  The severity of a burn is classified according to its depth
+                  and size. Superficial or first-degree burns only affect
+                  the outermost layer of skin and cause redness, pain, and
+                  swelling. Partial-thickness or second-degree burns damage
+                  deeper layers of skin and can cause blistering and scarring.
+                  Full-thickness or third-degree burns are the most severe
+                  and can penetrate through all layers of skin and underlying
+                  tissues, causing widespread tissue damage and permanent
+                  scarring.
+
+
+
+                </p>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4">
+
+          <div class="p-4 md:w-1/3">
+            <a href="#" class="block h-full border-2 border-gray-200
+              border-opacity-60 rounded-lg overflow-hidden
+              hover:border-indigo-500 hover:shadow-md transition duration-300">
+              <img class="lg:h-55 md:h-43 w-full object-cover object-center"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaqgFUC1uq1NZjDbCUiGoC1cx1232XMYW9VLEzNwd1gz_hH7OpZYSBHJNiOvlEl-pE8EU&usqp=CAU"
+                alt="blog">
+              <div class="p-6">
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Electric
+                  Shocks</h1>
+                <p class="leading-relaxed mb-3">An electric shock occurs when an
+                  electric current passes through the body.
+                  Electric shock can range in severity from mild to
+                  life-threatening, depending on the voltage and duration
+                  of the shock, as well as the path of the current through the
+                  body.
+                  Electric shock can be caused by direct contact with an
+                  electrical source, such as a power outlet or a faulty
+                  appliance, or by indirect contact, such as through contact
+                  with a conductive surface that is carrying an electric
+                  current, or by lightning strikes.
+                  Symptoms of electric shock can include a tingling sensation,
+                  muscle contractions, burns, unconsciousness, and
+                  even cardiac arrest.
+
+
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-4 md:w-1/3">
+            <a href="#" class="block h-full border-2 border-gray-200
+              border-opacity-60 rounded-lg overflow-hidden
+              hover:border-indigo-500 hover:shadow-md transition duration-300">
+              <img class="lg:h-55 md:h-43 w-full object-cover object-center"
+                src="https://previews.123rf.com/images/chai89/chai891909/chai89190900055/130473307-sick-little-child-girl-with-epileptic-seizures-in-outdoor-park-daughter-suffering-from-seizures.jpg"
+                alt="blog">
+              <div class="p-6">
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Seizures</h1>
+                <p class="leading-relaxed mb-3">Seizures, also known as
+                  convulsions, are sudden, uncontrolled electrical disturbances
+                  in the
+                  brain that can cause a wide range of physical and behavioral
+                  symptoms. Seizures can be caused by a variety of factors,
+                  including brain injury, stroke, infection, drug use or
+                  withdrawal, genetic conditions, or unknown causes.
+                  Symptoms of seizures can vary widely depending on the type and
+                  severity of the seizure, but may include
+                  sudden loss of consciousness, convulsions, muscle spasms or
+                  jerking, confusion or disorientation, visual or
+                  auditory disturbances, and loss of bladder or bowel control.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-4 md:w-1/3">
+            <a href="#" class="block h-full border-2 border-gray-200
+              border-opacity-60 rounded-lg overflow-hidden
+              hover:border-indigo-500 hover:shadow-md transition duration-300">
+              <img class="lg:h-55 md:h-43 w-full object-cover object-center"
+                src="https://www.denverhealth.org/-/media/images/modules/blog/posts/heat-rash-heat-exhaustion-heat-stroke-covid-denver-health.jpg?h=325&w=325&hash=2E7BDEED35794E871033FEB042F4C3C4"
+                alt="blog">
+              <div class="p-6">
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Heat
+                  exhaustion</h1>
+                <p class="leading-relaxed mb-3">Heat exhaustion is a
+                  heat-related illness that occurs when the body overheats and
+                  cannot regulate its temperature effectively. It is typically
+                  caused by exposure to high temperatures and high
+                  humidity, particularly when engaging in physical activity or
+                  spending prolonged periods of time outdoors without
+                  adequate hydration.
+
+                  Symptoms of heat exhaustion may include heavy sweating,
+                  weakness, fatigue, dizziness, headache, nausea or vomiting,
+                  and muscle cramps. In more severe cases, symptoms may progress
+                  to include confusion, rapid heartbeat, and low blood pressure.
+                </p>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4">
+
+          <div class="p-4 md:w-1/3">
+            <a href="#" class="block h-full border-2 border-gray-200
+              border-opacity-60 rounded-lg overflow-hidden
+              hover:border-indigo-500 hover:shadow-md transition duration-300">
+              <img class="lg:h-55 md:h-43 w-full object-cover object-center"
+                src="https://www.drvanchilingamhospital.com/imageuploads/pages/2018/10/26/brain-stroke-treatment.jpg"
+                alt="blog">
+              <div class="p-6">
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Stroke</h1>
+                <p class="leading-relaxed mb-3">A brain stroke, also known as a
+                  cerebrovascular accident (CVA), occurs when blood flow
+                  to the brain is interrupted, either due to a blockage or a
+                  ruptured blood vessel. The lack of blood flow causes brain
+                  cells to be deprived of oxygen and nutrients, which can lead
+                  to their death and permanent brain damage.
+
+                  Symptoms of a stroke may include sudden weakness or numbness
+                  on one side of the body, difficulty speaking
+                  or understanding speech, loss of vision or double vision,
+                  severe headache, and loss of balance or coordination.
+                  These symptoms can occur suddenly and require immediate
+                  medical attention.
+
+
+
+
+
+
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-4 md:w-1/3">
+            <a href="#" class="block h-full border-2 border-gray-200
+              border-opacity-60 rounded-lg overflow-hidden
+              hover:border-indigo-500 hover:shadow-md transition duration-300">
+              <img class="lg:h-55 md:h-43 w-full object-cover object-center"
+                src="https://www.verywellhealth.com/thmb/bCW1NRK56c5oJ_3Y13AONO2QVWE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/close-up-of-woman-with-bleeding-nose-1180586363-a44410be16484bd3b4f10fbc4a04078a.jpg"
+                alt="blog">
+              <div class="p-6">
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Bleeding</h1>
+                <p class="leading-relaxed mb-3">Bleeding is the loss of blood
+                  from the body, either internally or externally. It can occur
+                  due to a variety of reasons, such as injury, surgery, or
+                  underlying medical conditions. Bleeding can range from minor,
+                  such as a small cut or scrape, to severe, such as a major
+                  trauma or internal bleeding.
+
+                  Symptoms of bleeding can vary depending on the location and
+                  severity of the bleeding. Common signs of bleeding include
+                  visible blood from a cut or wound, bruising or discoloration
+                  around the site of injury, lightheadedness or dizziness, rapid
+                  heartbeat, and decreased blood pressure.
+
+
+
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-4 md:w-1/3">
+            <a href="#" class="block h-full border-2 border-gray-200
+              border-opacity-60 rounded-lg overflow-hidden
+              hover:border-indigo-500 hover:shadow-md transition duration-300">
+              <img class="lg:h-55 md:h-43 w-full object-cover object-center"
+                src="https://www.homage.sg/wp-content/uploads/2021/03/fracture-and-broken-bones.jpg"
+                alt="blog">
+              <div class="p-6">
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Fractures</h1>
+                <p class="leading-relaxed mb-3">Fractures, also known as broken
+                  bones, occur when a bone is partially or completely broken due
+                  to an injury or trauma. Fractures can range in severity from a
+                  hairline crack to a complete break, and can occur in any bone
+                  in the body.
+
+                  Symptoms of a fracture may include pain, swelling, bruising,
+                  or deformity around the affected area, difficulty moving or
+                  using the affected body part, and in severe cases, visible
+                  bone protruding through the skin.</p>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4">
+
+          <div class="p-4 md:w-1/3">
+            <a href="#" class="block h-full border-2 border-gray-200
+              border-opacity-60 rounded-lg overflow-hidden
+              hover:border-indigo-500 hover:shadow-md transition duration-300">
+              <img class="lg:h-55 md:h-43 w-full object-cover object-center"
+                src="https://www.criminaldefencelawyers.com.au/wp-content/uploads/2021/05/Thallium-poison-being-poured-into-drink-1440x960.jpg"
+                alt="blog">
+              <div class="p-6">
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Poisoning</h1>
+                <p class="leading-relaxed mb-3">Poisoning occurs when a person
+                  is exposed to harmful substances, such as chemicals, drugs, or
+                  toxic plants, that can cause harm to the body. Poisoning can
+                  occur through ingestion, inhalation, injection, or absorption
+                  through the skin.
+
+                  Symptoms of poisoning can vary depending on the type and
+                  amount of substance involved, but can include nausea,
+                  vomiting, abdominal pain, headache, dizziness, confusion,
+                  seizures, and difficulty breathing. In severe cases, poisoning
+                  can be life-threatening and require emergency medical
+                  attention.</p>
+              </div>
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-gray-600 body-font">
+      <div class="bg-gray-100">
+        <div class="container px-5 py-6 mx-auto flex items-center
+          sm:flex-row flex-col">
+          <img src="{{url_for('static', filename='logo.png')}}"
+            alt="Logo" class="w-16 md:w-40 mr-4
+            md:mr-6">
+          <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2023
+            TechTitans
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4
+            justify-center sm:justify-start">
+            <div class="ml-3 w-5 h-5">
+              <a href="mailto:dcetechtitans@google.com">
+                <img src="{{url_for('static',
+                  filename='gmail.png')}}" class="w-full
+                  h-full object-cover
+                  object-center">
+              </a>
+            </div>
+            <div class="ml-3 w-5 h-5">
+              <a href="">
+                <img src="{{url_for('static',
+                  filename='github.png')}}" class="w-full
+                  h-full object-cover
+                  object-center">
+              </a>
+            </div>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

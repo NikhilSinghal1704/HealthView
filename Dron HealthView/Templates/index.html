@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dron HealthView</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    </head>
+    <body>
+
+        <header class="text-gray-600 body-font bg-indigo-100">
+            <div class="container mx-auto flex flex-wrap items-center
+              justify-between
+              py-4 md:py-5 px-4 md:px-5">
+              <a href="index" class="flex items-center text-gray-900">
+                <img src="{{url_for('static', filename='logo.png')}}" alt="Logo" class="w-16 md:w-40 mr-4
+                  md:mr-6">
+              </a>
+              <nav class="md:hidden">
+                <button class="flex items-center px-3 py-2 rounded
+                  hover:text-gray-900
+                  focus:outline-none">
+                  <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M3.75
+                      7.5H20.25V9.75H3.75V7.5ZM3.75
+                      11.25H20.25V13.5H3.75V11.25ZM3.75
+                      15H20.25V17.25H3.75V15Z"></path>
+                  </svg>
+                </button>
+                <div class="hidden absolute top-16 left-0 right-0 z-10
+                  bg-indigo-100">
+                  <a href="Dashboard" class="block px-4 py-2 text-gray-900
+                    hover:bg-gray-200
+                    font-bold">Dashboard</a>
+                  <a href="Firstaid" class="block px-4 py-2 text-gray-900
+                    hover:bg-gray-200
+                    font-bold">First Aid Tips</a>
+                  <a href="#" class="block px-4 py-2 text-gray-900
+                    hover:bg-gray-200
+                    font-bold">Medical Providers</a>
+                  <a href="About" class="block px-4 py-2 text-gray-900
+                    hover:bg-gray-200
+                    font-bold">About</a>
+                </div>
+              </nav>
+              <nav class="hidden md:flex md:ml-auto md:mr-4">
+                <a href="Dashboard" class="mr-5 hover:text-gray-900 font-bold">Dashboard</a>
+                <a href="Firstaid" class="mr-5 hover:text-gray-900 font-bold">First
+                  Aid Tips</a>
+                <a href="#" class="mr-5 hover:text-gray-900 font-bold">Medical
+                  Providers</a>
+                <a href="About" class="mr-5 hover:text-gray-900 font-bold">About</a>
+              </nav>
+              <button href = 'signup' class="inline-flex items-center bg-gray-900 border-0
+                py-1 px-3
+                focus:outline-none hover:bg-gray-700 rounded text-white
+                text-base
+                md:mt-0">
+                Sign Up
+              </button>
+            </div>
+          </header>
+
+        <section class="bg-gray-900">
+            <div class="bg-gray-900 h-64">
+                <div class="container mx-auto px-6 text-center">
+                    <h1 class="text-4xl font-bold text-white uppercase
+                        leading-tight mb-8">Welcome to HealthView</h1>
+                    <p class="text-lg text-gray-400 mb-12">HealthView is a
+                        personal health tracking app designed to help
+                        individuals monitor their health and wellness. With
+                        HealthView, you can track important health metrics like
+                        heart rate, blood pressure, and sleep patterns using
+                        wearable devices. Our app also stores your medical
+                        history and sends reminders for medications, making it
+                        easy to stay on top of your health.</p>
+                    <a class="bg-green-500 hover:bg-green-400 text-white
+                        font-bold py-4 px-8 rounded-full uppercase
+                        tracking-wide" href="signup">Sign Up</a>
+                </div>
+            </div>
+        </section>        
+
+        <br>
+
+        <section class="text-gray-600 body-font">
+            <center class="text-5xl font-bold mb-4">
+                <span class="text-indigo-500">Key features</span>
+            </center>
+            <div class="container px-5 py-12 mx-auto">
+
+                <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10
+                    mb-10 border-gray-200 sm:flex-row flex-col bg-white
+                    rounded-lg shadow-lg">
+                    <div class="sm:w-24 sm:h-24 h-16 w-16 sm:ml-10 inline-flex
+                        items-center justify-center rounded-full
+                        text-green-500 flex-shrink-0">
+                        <img src="{{url_for('static', filename='historyicon.jpg')}}" alt="Profile Picture"
+                            class="w-3/4 h-3/4 object-cover
+                            mx-auto">
+                    </div>
+                    <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0
+                        sm:ml-6">
+                        <h2 class="text-gray-900 text-2xl font-medium mb-2">Your
+                            Dashboard</h2>
+                        <p class="leading-relaxed text-base">HealthView provides
+                            a personalized health dashboard that allows
+                            individuals to track their health metrics such as
+                            heart rate, blood pressure, and sleep patterns
+                            through wearables and it also stores the medical
+                            history of the individual. HealthView also sends
+                            reminders to individuals to take their medications
+                            on time, ensuring that they adhere to their
+                            prescribed medication regimen.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10
+                    mb-10
+                    border-gray-200 sm:flex-row flex-col bg-white rounded-lg
+                    shadow-lg">
+                    <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0
+                        px-6">
+                        <h2 class="text-gray-900 text-2xl font-medium mb-2">Medical
+                            Providers</h2>
+                        <p class="leading-relaxed text-base">The nearby medical
+                            provider feature in HealthView allows users to
+                            easily search for medical providers in their area,
+                            view their contact information, and get directions
+                            to their offices. This feature is particularly
+                            useful for individuals who are new to an area or in
+                            need of urgent medical care. It allows users to give
+                            ratings to the providers.</p>
+                    </div>
+                    <div class="sm:w-24 sm:h-24 h-16 w-16 sm:mr-10 inline-flex
+                        items-center justify-center
+                        rounded-full text-green-500 flex-shrink-0">
+                        <i class="fas fa-hospital fa-2x text-center">
+                            <img src="{{url_for('static', filename='providericon.jpg')}}" alt="Profile Picture"
+                                class="w-3/4 h-3/4 object-cover
+                                mx-auto">
+                        </i>
+                    </div>
+                </div>
+
+                <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10
+                    mb-10 border-gray-200 sm:flex-row flex-col bg-white
+                    rounded-lg shadow-lg">
+                    <div class="sm:w-24 sm:h-24 h-16 w-16 sm:ml-10 inline-flex
+                        items-center justify-center rounded-full
+                        text-green-500 flex-shrink-0">
+                        <img src="{{url_for('static', filename='firstaidicon.jpg')}}" alt="Profile Picture"
+                            class="w-3/4 h-3/4 object-cover
+                            mx-auto">
+                    </div>
+                    <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0
+                        sm:ml-6">
+                        <h2 class="text-gray-900 text-2xl font-medium mb-2">First
+                            Aid Information</h2>
+                        <p class="leading-relaxed text-base">The first aid
+                            information feature of HealthView provides users
+                            with access to important medical information and
+                            instructions on how to handle emergency situations.
+                            This includes step-by-step guidance on how to
+                            perform basic first aid procedures such as CPR and
+                            treating burns. By providing users with this
+                            information, HealthView empowers them to take
+                            control of their health and be better prepared for
+                            emergencies.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10
+                    mb-10
+                    border-gray-200 sm:flex-row flex-col bg-white rounded-lg
+                    shadow-lg">
+                    <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0
+                        px-6">
+                        <h2 class="text-gray-900 text-2xl font-medium mb-2">Medical
+                            History Access</h2>
+                        <p class="leading-relaxed text-base">In an emergency,
+                            HealthView can provide the patient's medical history
+                            to the medical attendant, which can help the medical
+                            attendant give optimal treatment. This can be
+                            crucial in situations where the patient is unable to
+                            communicate their medical history.</p>
+                    </div>
+                    <div class="sm:w-24 sm:h-24 h-16 w-16 sm:mr-10 inline-flex
+                        items-center justify-center
+                        rounded-full text-green-500 flex-shrink-0">
+                        <i class="fas fa-hospital fa-2x text-center">
+                            <img src="{{url_for('static', filename='dashboardicon.jpg')}}" alt="Profile Picture"
+                                class="w-3/4 h-3/4 object-cover
+                                mx-auto">
+                        </i>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="text-gray-600 body-font">
+            <div class="bg-gray-100">
+                <div class="container px-5 py-6 mx-auto flex items-center
+                    sm:flex-row flex-col">
+                    <img src="{{url_for('static', filename='logo.png')}}" alt="Logo" class="w-16 md:w-40 mr-4
+                        md:mr-6">
+                    <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">©
+                        2023 TechTitans
+                    </p>
+                    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4
+                        justify-center sm:justify-start">
+                        <div class="ml-3 w-5 h-5">
+                            <a href="mailto:dcetechtitans@google.com">
+                                <img src="{{url_for('static', filename='gmail.png')}}" class="w-full h-full
+                                    object-cover
+                                    object-center">
+                            </a>
+                        </div>
+                        <div class="ml-3 w-5 h-5">
+                            <a href="">
+                                <img src="{{url_for('static', filename='github.png')}}" class="w-full h-full
+                                    object-cover
+                                    object-center">
+                            </a>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </footer>
+
+
+    </body>
+</html>

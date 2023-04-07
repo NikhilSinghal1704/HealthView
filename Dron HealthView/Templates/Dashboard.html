@@ -1,0 +1,194 @@
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dron HealthView</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    </head>
+    <body>
+
+        <header class="text-gray-600 body-font bg-indigo-100">
+            <div class="container mx-auto flex flex-wrap items-center
+                justify-between
+                py-4 md:py-5 px-4 md:px-5">
+                <a href="index" class="flex items-center text-gray-900">
+                    <img src="{{url_for('static', filename='logo.png')}}"
+                        alt="Logo" class="w-16 md:w-40 mr-4
+                        md:mr-6">
+                </a>
+                <nav class="md:hidden">
+                    <button class="flex items-center px-3 py-2 rounded
+                        hover:text-gray-900
+                        focus:outline-none">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M3.75
+                                7.5H20.25V9.75H3.75V7.5ZM3.75
+                                11.25H20.25V13.5H3.75V11.25ZM3.75
+                                15H20.25V17.25H3.75V15Z"></path>
+                        </svg>
+                    </button>
+                    <div class="hidden absolute top-16 left-0 right-0 z-10
+                        bg-indigo-100">
+                        <a href="Dashboard" class="block px-4 py-2 text-gray-900
+                            hover:bg-gray-200
+                            font-bold">Dashboard</a>
+                        <a href="Firstaid.html" class="block px-4 py-2
+                            text-gray-900
+                            hover:bg-gray-200
+                            font-bold">First Aid Tips</a>
+                        <a href="#" class="block px-4 py-2 text-gray-900
+                            hover:bg-gray-200
+                            font-bold">Medical Providers</a>
+                        <a href="About" class="block px-4 py-2 text-gray-900
+                            hover:bg-gray-200
+                            font-bold">About</a>
+                    </div>
+                </nav>
+                <nav class="hidden md:flex md:ml-auto md:mr-4">
+                    <a href="Dashboard" class="mr-5 hover:text-gray-900
+                        font-bold">Dashboard</a>
+                    <a href="Firstaid" class="mr-5 hover:text-gray-900
+                        font-bold">First
+                        Aid Tips</a>
+                    <a href="#" class="mr-5 hover:text-gray-900 font-bold">Medical
+                        Providers</a>
+                    <a href="About" class="mr-5 hover:text-gray-900 font-bold">About</a>
+                </nav>
+                <button href="signup" class="inline-flex items-center
+                    bg-gray-900 border-0
+                    py-1 px-3
+                    focus:outline-none hover:bg-gray-700 rounded text-white
+                    text-base
+                    md:mt-0">
+                    Sign Up
+                </button>
+            </div>
+        </header>
+
+        <div class="flex h-screen bg-gray-200">
+            <div class="w-1/5 bg-white shadow-xl">
+                <div class="py-4 px-8 border-b border-gray-300">
+                    <h2 class="text-lg font-semibold">HealthView</h2>
+                </div>
+                <div class="mt-8">
+                    <nav>
+                        <a href="dashboard" class="block py-2.5 px-8 text-gray-600
+                            hover:bg-gray-100 hover:text-gray-800">Tracker</a>
+                        <a href="medcalable" class="block py-2.5 px-8 text-gray-600
+                            hover:bg-gray-100 hover:text-gray-800">History</a>
+                        <a href="#" class="block py-2.5 px-8 text-gray-600
+                            hover:bg-gray-100 hover:text-gray-800">Profile</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="flex-1">
+
+                <div class="flex flex-wrap justify-center">
+                    <div class="w-full md:w-1/3 xl:w-1/4 p-6 relative">
+                        <!--Metric Card-->
+                        <div class="bg-gradient-to-b from-pink-200 to-pink-100
+                            border-b-4 border-pink-500 rounded-lg shadow-xl
+                            p-5">
+                            <div class="flex flex-row items-center">
+                                <div class="flex-shrink pr-4">
+                                    <img class="h-10 w-10 object-contain"
+                                        src=img src="{{url_for('static',
+                                        filename='heart.png')}}" alt="Logo">
+                                </div>
+                                <div class="flex-1 text-right md:text-center">
+                                    <h2 class="font-bold uppercase
+                                        text-gray-600">Average BP</h2>
+                                    <p class="font-bold text-3xl">96 <span
+                                            class="text-green-500"><i class="fas
+                                                fa-caret-up"></i></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/Metric Card-->
+                    </div>
+
+                    <div class="w-full md:w-1/3 xl:w-1/4 p-6 relative">
+                        <!--Metric Card-->
+                        <div class="bg-gradient-to-b from-lime-200 to-lime-100
+                            border-b-4 border-pink-500 rounded-lg shadow-xl
+                            p-5">
+                            <div class="flex flex-row items-center">
+                                <div class="flex-shrink pr-4">
+                                    <img class="h-10 w-10 object-contain"
+                                        src=img src="{{url_for('static',
+                                        filename='stepsicon.png')}}" alt="Logo">
+                                </div>
+                                <div class="flex-1 text-right md:text-center">
+                                    <h2 class="font-bold uppercase
+                                        text-gray-600">Step Count</h2>
+                                    <p class="font-bold text-3xl">2000 <span
+                                            class="text-green-500"><i class="fas
+                                                fa-caret-up"></i></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/Metric Card-->
+                    </div>
+
+                    <div class="w-full md:w-1/3 xl:w-1/4 p-6 relative">
+                        <!--Metric Card-->
+                        <div class="bg-gradient-to-b from-yellow-200
+                            to-yellow-100 border-b-4 border-pink-500 rounded-lg
+                            shadow-xl p-5">
+                            <div class="flex flex-row items-center">
+                                <div class="flex-shrink pr-4">
+                                    <img class="h-10 w-10 object-contain"
+                                        src=img src="{{url_for('static',
+                                        filename='weight-scale.png')}}" alt="Logo">
+                                </div>
+                                <div class="flex-1 text-right md:text-center">
+                                    <h2 class="font-bold uppercase
+                                        text-gray-600">weight</h2>
+                                    <p class="font-bold text-3xl">80 <span
+                                            class="text-green-500"><i class="fas
+                                                fa-caret-up"></i></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/Metric Card-->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="text-gray-600 body-font">
+            <div class="bg-gray-100">
+                <div class="container px-5 py-6 mx-auto flex items-center
+                    sm:flex-row flex-col">
+                    <img src="{{url_for('static', filename='logo.png')}}"
+                        alt="Logo" class="w-16 md:w-40 mr-4
+                        md:mr-6">
+                    <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2023
+                        TechTitans
+                    </p>
+                    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4
+                        justify-center sm:justify-start">
+                        <div class="ml-3 w-5 h-5">
+                            <a href="mailto:dcetechtitans@google.com">
+                                <img src="{{url_for('static',
+                                    filename='gmail.png')}}" class="w-full
+                                    h-full object-cover
+                                    object-center">
+                            </a>
+                        </div>
+                        <div class="ml-3 w-5 h-5">
+                            <a href="">
+                                <img src="{{url_for('static',
+                                    filename='github.png')}}" class="w-full
+                                    h-full object-cover
+                                    object-center">
+                            </a>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
